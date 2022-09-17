@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.all{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("port1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-size: 50px;
+    color: #ffff;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    
+}
+h1 span{
+    font-family: 'Silkscreen', cursive;
+    color: crimson;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+    position: relative;
+
+}
+ul li a{
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s ease-in-out;
+}
+ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 100%;
+
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffff;
+
+}
+h2{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #ffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: .7s;
+}
+button:hover{
+    background-color: #009688;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+
+}
